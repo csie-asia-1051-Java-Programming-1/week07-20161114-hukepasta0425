@@ -1,11 +1,10 @@
 package ex;
 import java.util.*;
-/*
- * Date: 2016/11/14
- * Author: 105021031 ©s¨Ê¿A
- */
-public class ex01 {
-
+public class ex02 {
+	Scanner src = new Scanner(System.in);
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner src = new Scanner(System.in);
@@ -18,7 +17,7 @@ public class ex01 {
 		}
 		float u=sum/n;
 		float ans=fun1(data, n-1,u);
-		System.out.print(ans);
+		System.out.print(Math.pow(ans, 0.5));
 
 	}
 
@@ -34,9 +33,6 @@ public class ex01 {
 			return (((data1[n1]-u1)*(data1[n1]-u1))/n1)+ ((data1[n1-1]-u1)*(data1[n1-1]-u1))/n1;
 			
 		}
-		
-
-	
 	}
 
 }
